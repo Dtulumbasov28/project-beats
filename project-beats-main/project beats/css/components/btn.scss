@@ -1,17 +1,30 @@
 .btn {
+  display: inline-block;
   font-weight: bold;
   padding: 18px 35px;
   text-transform: uppercase;
   border-radius: 100px;
   line-height: 1;
   text-decoration: none;
+  border: none;
 
   &--theme--red {
     background: $red;
     color: #fff;
+
     &:hover {
-      color: #666;
-      background: #111;
+      background: #fff;
+      color: $red;
+    }
+  }
+  
+  &--theme--transparent {
+    background: transparent;
+    color: #fff;
+
+    &:hover {
+      background: $red;
+      color: #fff;
     }
   }
 }
