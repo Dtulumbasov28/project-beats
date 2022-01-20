@@ -1,4 +1,4 @@
-$containerWidht: 940px;
+$containerWidht: 1000px;
 $baseFontSize: 18px;
 
 //colors
@@ -27,5 +27,5 @@ $red: #E01F3C;
 @import "components/form";
 @import "components/order-section";
 @import "components/radio";
-
+@import "components/fixed-menu";
 

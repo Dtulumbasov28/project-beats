@@ -22,13 +22,13 @@ body {
 .wrapper {
   position: relative;
   width: 100%;
-  min-width: 960px;
+  min-width: 1020px;
   min-height: 100%;
   overflow: hidden;
 }
 
 .container {
-  width: 940px;
+  width: 1000px;
   margin: 0 auto;
 }
 
@@ -82,7 +82,7 @@ footer {
 }
 
 .hero__container {
-  background: url(../../img/Fon_beats.png) right center no-repeat;
+  background: url(../img/Fon_beats.png) right center no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -124,7 +124,7 @@ footer {
 }
 
 .logo {
-  margin-right: 25px;
+  margin-right: 36px;
 }
 
 .menu__list {
@@ -134,6 +134,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 60px;
 }
 
 .menu__item {
@@ -233,7 +234,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 300px;
 }
 .section--font-color--white {
   color: #fff;
@@ -380,7 +380,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 100px;
 }
 
 .interactive-avatar {
@@ -418,14 +417,14 @@ footer {
   display: flex;
 }
 
-.form__col {
+.form__cool {
   width: 450px;
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
   margin-right: 20px;
 }
-.form__col:last-child {
+.form__cool:last-child {
   margin-right: 0;
 }
 
@@ -451,10 +450,12 @@ footer {
   border: none;
   padding: 18px 11px;
   border: 3px solid transparent;
+  border-radius: 4px;
 }
 .form__input--textarea {
-  height: 180px;
+  height: 174px;
   resize: none;
+  margin-bottom: 18px;
 }
 .form__input:focus {
   border-color: #E01F3D;
@@ -467,6 +468,9 @@ footer {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.form__controls:last-child {
+  margin-bottom: 20px;
 }
 
 .order-section {
@@ -482,12 +486,14 @@ footer {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+  margin-right: 24px;
+  margin-bottom: 16px;
 }
 .radio--checkbox .radio__visible {
   border-radius: 0;
 }
 .radio--checkbox .radio__visible:before {
-  background: url(../../img/tick.png) center center no-repeat;
+  background: url(../img/tick.png) center center no-repeat;
 }
 
 .radio__elem {
@@ -503,6 +509,7 @@ footer {
   position: relative;
   border-radius: 50%;
   background: #fff;
+  margin-right: 10px;
 }
 .radio__visible:before {
   content: "";
@@ -512,6 +519,42 @@ footer {
   border-radius: 50%;
   position: absolute;
   display: none;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.fixed-menu {
+  position: fixed;
+  top: 20%;
+  right: 3%;
+}
+
+.fixed-menu__item {
+  margin-bottom: 5px;
+}
+.fixed-menu__item--active .fixed-menu__link {
+  border-color: #E01F3C;
+}
+
+.fixed-menu__link {
+  background: transparent;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  display: block;
+  position: relative;
+}
+.fixed-menu__link:before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #292929;
+  position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);

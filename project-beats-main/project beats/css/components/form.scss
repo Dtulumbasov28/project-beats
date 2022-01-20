@@ -1,7 +1,7 @@
 .form {
     display: flex;
 }
-.form__col {
+.form__cool {
     width: 450px;
     flex: 1;
     margin-right: 20px;
@@ -27,10 +27,12 @@
     border: none;
     padding: 18px 11px;
     border: 3px solid transparent;
+    border-radius: 4px;
 
     &--textarea {
-        height: 180px;
+        height: 174px;
         resize: none;
+        margin-bottom: 18px;
     }
 
     &:focus {
@@ -41,4 +43,8 @@
 .form__controls {
     display: flex;
     flex-wrap: wrap;
+
+    &:last-child {
+        margin-bottom: 20px;
+    }
 }
