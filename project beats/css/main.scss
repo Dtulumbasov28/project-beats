@@ -1,12 +1,22 @@
-$containerWidht: 940px;
+$containerWidht: 1040px;
 $baseFontSize: 18px;
+
+
+//breakpoints
+
+$tablets: 768px;
+$phones: 480px;
 
 //colors
 $grey: #F5F5F5;
 $red: #E01F3C;
+$black: #292929;
+
+
+@import "../css/media.scss";
 
 //normalize
-@import "../layout/normalize.css";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 
 //setups
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap');
@@ -15,6 +25,19 @@ $red: #E01F3C;
 // components
 @import "components/hero";
 @import "components/header";
+@import "components/menu";
 @import "components/features";
 @import "components/feature";
 @import "components/btn";
+@import "components/section";
+@import "components/headline";
+@import "components/benefits";
+@import "components/benefit";
+@import "components/reviews";
+@import "components/interactive-avatar";
+@import "components/form";
+@import "components/order-section";
+@import "components/radio";
+@import "components/fixed-menu";
+@import "components/hamburger";
+

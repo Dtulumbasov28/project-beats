@@ -1,48 +1,62 @@
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: $baseFontSize;
+
+@include tablets {
+  font-size: $baseFontSize - 1px;
+}
+
+@include phones {
+  font-size: $baseFontSize - 2px;
+}
+
+}
 html, body {
   height: 100%;
 }
 body {
-  font-size: $baseFontSize;
   font-family: 'Alegreya Sans', Arial, Helvetica, sans-serif;
   font-family: 'Play', Arial, Helvetica, sans-serif;
   line-height: 1.42;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #666;
 }
 .wrapper {
   position: relative;
   width: 100%;
-  min-width:  $containerWidht + 20px;
   min-height: 100%;
   overflow: hidden;
 } 
 .container {
-  width: $containerWidht;;
+  width: 95%;
+  max-width: $containerWidht;
   margin: 0 auto;
+  position: relative;
 }
 a {
   color: inherit;
 }
 ul {
-  padding: 0px;
-  margin: 0px;
+  padding: rem(0px);
+  margin: rem(0px);
 }
 ul li {
   list-style: none;
 }
 h1, h2, h3, h4 {
+  color: $black;
   margin: 0;
   font-weight: normal;
 }
 p {
-  margin-top: 0px;
+  margin-top: rem(0px);
 }
 table {
   border-collapse: collapse;
-  border-spacing: 0px;
+  border-spacing: rem(0px);
 }
 img {
   display: block;
