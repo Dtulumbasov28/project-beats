@@ -820,3 +820,46 @@ footer {
   height: 4px;
   border-radius: 10px;
 }
+
+.map {
+  width: 100%;
+  background: url(../../img/map.png);
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1.2777777778rem 0;
+  background: fff;
+}
+
+.footer__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media screen and (max-width: 480px) {
+  .footer__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__phone-number {
+  font-sizee: 18px;
+  font-weight: bold;
+}
+
+.contacts {
+  font-style: normal;
+  color: #292929;
+}
