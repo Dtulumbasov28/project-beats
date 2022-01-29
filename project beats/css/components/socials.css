@@ -1,0 +1,29 @@
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 74px;
+}
+
+.socials__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 5px;
+}
+
+.socials__link {
+  width: 30px;
+  height: 30px;
+}
+
+.socials__item--icon--vk .socials__link {
+  background: url(../../img/vk.svg);
+}
+
+.socials__item--icon--fb .socials__link {
+  background: url(../../img/fb.svg);
+}
