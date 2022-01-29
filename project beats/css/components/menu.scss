@@ -17,6 +17,12 @@
   justify-content: center;
   margin-right: rem(60px);
 
+  @include tablets {
+    display: block;
+    margin-top: rem(150px);
+    margin-right: 0;
+  }
+
 }
 .menu__item {
   margin-right: rem(16px);
@@ -24,6 +30,12 @@
   
   &:last-child {
     margin-right: rem(0px);
+  }
+
+  @include tablets {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: rem(25px);
   }
 }
 .menu__link {
@@ -52,7 +64,10 @@
   font-size: 36px;
   color: #fff;
   text-align: center;
-
+  background: $black;
+  margin: 0;
+  width: 100%;
+  
   @include tablets {
     display: block;
   }
