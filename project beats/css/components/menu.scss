@@ -47,3 +47,13 @@
 .phone-number__text {
   white-space: nowrap;
 }
+.menu--vertical {
+  display: none;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+
+  @include tablets {
+    display: block;
+  }
+}

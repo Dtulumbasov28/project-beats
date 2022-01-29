@@ -196,6 +196,13 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (max-width: 768px) {
+  .header {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 
 @media screen and (max-width: 768px) {
   .phone-number.header__phone-number {
@@ -274,6 +281,18 @@ footer {
 
 .phone-number__text {
   white-space: nowrap;
+}
+
+.menu--vertical {
+  display: none;
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+}
+@media screen and (max-width: 768px) {
+  .menu--vertical {
+    display: block;
+  }
 }
 
 .features {
@@ -407,7 +426,7 @@ footer {
 @media screen and (max-width: 480px) {
   .benefits__item {
     padding: 0;
-    margin-bottom: 1.3333333333rem;
+    margin-bottom: 0;
   }
 }
 .benefits__item:before {
@@ -535,6 +554,11 @@ footer {
       -ms-flex: 1;
           flex: 1;
   margin-left: 1.1111111111rem;
+}
+@media screen and (max-width: 480px) {
+  .reviews__content {
+    margin-left: 0;
+  }
 }
 
 .reviews__title {
@@ -862,4 +886,15 @@ footer {
 .contacts {
   font-style: normal;
   color: #292929;
+}
+
+.fullscreen-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }

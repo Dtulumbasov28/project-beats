@@ -12,7 +12,7 @@
 
     @include phones {
         padding: 0;
-        margin-bottom: rem(24px);
+        margin-bottom: 0;
     }
 
     &:before {
