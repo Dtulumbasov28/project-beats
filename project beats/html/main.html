@@ -40,11 +40,9 @@
               </ul>
             </nav>
             <a href="tel:+78009039090" class="phone-number header__phone-number">
-              <span class="phone-number__icon">
-                <svg class="phone-number__icon-elem">
-                  <use xlink:href="../img/sprite.svg#phone"></use>
-                </svg>
-              </span>
+              <svg class="phone-number__icon">
+                <use xlink:href="../img/sprite.svg#phone"></use>
+              </svg>
               <span class="phone-number__text">8 800 903 90 90</span>
             </a>
             <a href="#" class="hamburger">
@@ -63,23 +61,23 @@
               <li class="features__item feature">
                 <div class="feature__icon">
                   <svg class="feature__image">
-                    <use xlink:href="./img/sprite.svg#icon1"></use>
+                    <use xlink:href="../img/sprite.svg#feature1"></use>
                   </svg>
                 </div>
                 <div class="feature__text">Безупречный звук</div>
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
-                  <svg class="feature__image">
-                    <use xlink:href="../img/sprite.svg#icon2"></use>
-                  </svg>
+                </svg><svg class="feature__image">
+                  <use xlink:href="../img/sprite.svg#feature2"></use>
+                </svg>
                 </div>
                 <div class="feature__text">До 40 часов работы</div>
               </li>
               <li class="features__item feature">
                 <div class="feature__icon">
                   <svg class="feature__image">
-                    <use xlink:href="../img/sprite.svg#icon3"></use>
+                    <use xlink:href="../img/sprite.svg#feature3"></use>
                   </svg>
                 </div>
                 <div class="feature__text">Технология Fasr Fuel</div>
@@ -99,7 +97,7 @@
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
                   <svg class="benefit__icon">
-                    <use xlink:href="../img/sprite.svg#benefit1"></use>
+                    <use xlink:href="../img/sprite.svg#feat-1"></use>
                   </svg>
                 </div>
               </div>
@@ -116,8 +114,8 @@
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
                   <svg class="benefit__icon">
-                    <use xlink:href="../img/sprite.svg#benefit2"></use>
-                  </svg>                
+                    <use xlink:href="../img/sprite.svg#feat-2"></use>
+                  </svg>               
                 </div>
               </div>
               <div class="benefit__text">
@@ -133,8 +131,8 @@
               <div class="benefit__image">
                 <div class="benefit__image-wrapper">
                   <svg class="benefit__icon">
-                    <use xlink:href="../img/sprite.svg#benefit3"></use>
-                  </svg>
+                    <use xlink:href="../img/sprite.svg#feat-3"></use>
+                  </svg> 
                 </div>
               </div>
               <div class="benefit__text">
@@ -153,8 +151,16 @@
         <div class="container">
           <div class="products-slider">
             <div class="products-slider__arrows">
-              <a href="#" class="products-slider__arrow products-slider__arrow--direction--prev"></a>
-              <a href="#" class="products-slider__arrow products-slider__arrow--direction--next"></a>
+              <a href="#" class="products-slider__arrow products-slider__arrow--direction--prev">
+                <svg class="products-slider__arrow--icon--prev">
+                  <use xlink:href="../img/sprite.svg#prev"></use>
+                </svg>
+              </a>
+              <a href="#" class="products-slider__arrow products-slider__arrow--direction--next">
+                <svg class="products-slider__arrow--icon--next">
+                  <use xlink:href="../img/sprite.svg#next"></use>
+                </svg>
+              </a>
             </div>
             <ul class="products">
               <li class="products__item">
@@ -164,31 +170,43 @@
                   </div>
                   <div class="product__col">
                     <div class="product__ingredients">
-                      <img src="../img/gear.svg" alt="" class="product__ingredients-gear">
+                      <svg class="product__ingredients-icon">
+                        <use xlink:href="../img/sprite.svg#gear"></use>
+                      </svg>
                     </div>
                     <div class="product__dropdown">
                       <div class="product__dropdown-parameters">
-                        <img src="../img/bluetooth.svg" alt="bluetooth" class="product__dropdown-icon">
+                        <svg class="product__dropdown-icon">
+                          <use xlink:href="../img/sprite.svg#bluetooth"></use>
+                        </svg>
                         <div class="product__dropdown-desc">Bluetooth</div>
                         <div class="product__dropdown-value">4.0</div>
                       </div>
                       <div class="product__dropdown-parameters">
-                        <img src="../img/nut.svg" alt="nut" class="product__dropdown-icon">
+                        <svg class="product__dropdown-icon">
+                          <use xlink:href="../img/sprite.svg#nut"></use>
+                        </svg>
                         <div class="product__dropdown-desc">Дальность </div>
                         <div class="product__dropdown-value">12 м</div>
                       </div>
                       <div class="product__dropdown-parameters">
-                        <img src="../img/charger.svg" alt="charger" class="product__dropdown-icon">
+                        <svg class="product__dropdown-icon">
+                          <use xlink:href="../img/sprite.svg#charger"></use>
+                        </svg>
                         <div class="product__dropdown-desc">Зарядка</div>
                         <div class="product__dropdown-value">3 ч</div>
                       </div>
                       <div class="product__dropdown-parameters">
-                        <img src="../img/kg.svg" alt="kg" class="product__dropdown-icon">
+                        <svg class="product__dropdown-icon">
+                          <use xlink:href="../img/sprite.svg#kg"></use>
+                        </svg>
                         <div class="product__dropdown-desc">Вес</div>
                         <div class="product__dropdown-value">215гр</div>
                       </div>
                       <div class="product__dropdown-parameters">
-                        <img src="../img/patent.svg" alt="patent" class="product__dropdown-icon">
+                        <svg class="product__dropdown-icon">
+                          <use xlink:href="../img/sprite.svg#patent"></use>
+                        </svg>
                         <div class="product__dropdown-desc">Гарантия</div>
                         <div class="product__dropdown-value">1 год</div>
                       </div>
@@ -328,32 +346,45 @@
         </div>
       </section>
       <section class="section map--section">
-        <div class="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts">
               <div class="contacts__place">Москва, ул.Новый Арбат, д.31/45</div>
               <a href="tel:+78009039090" class="phone-number footer__phone-number">
-                <span class="phone-number__icon">
-                  <svg class="phone-number__icon-elem">
+                  <svg class="phone-number__icon">
                     <use xlink:href="../img/sprite.svg#phone"></use>
                   </svg>
-                </span>
                 <span class="phone-number__text">8 800 903 90 90</span>
               </a>
             </address>
             <ul class="socials">
-              <li class="socials__item socials__item--icon--vk">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+              </svg><svg class="socials__icon">
+                <use xlink:href="../img/sprite.svg#vk">
+                  <a href="#" class="socials__link"></a>
+                </use>
+              </svg>
               </li>
-              <li class="socials__item socials__item--icon--fb">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+              </svg><svg class="socials__icon">
+                <use xlink:href="../img/sprite.svg#fb">
+                  <a href="#" class="socials__link"></a>
+                </use>
+              </svg>
               </li>
-              <li class="socials__item socials__item--icon--in">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+              </svg><svg class="socials__icon">
+                <use xlink:href="../img/sprite.svg#in">
+                  <a href="#" class="socials__link"></a>
+                </use>
+              </svg>
               </li>
-              <li class="socials__item socials__item--icon--tg">
-                <a href="#" class="socials__link"></a>
+              <li class="socials__item">
+              </svg><svg class="socials__icon">
+                <use xlink:href="../img/sprite.svg#tg">
+                  <a href="#" class="socials__link"></a>
+                </use>
+              </svg>
               </li>
             </ul>
           </div>
@@ -364,7 +395,8 @@
   <nav class="fixed-menu">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active"> <a href="" class="fixed-menu__link"></a> </li>
-      <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> 
+        <a href="" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
@@ -374,7 +406,7 @@
       <li class="fixed-menu__item"> <a href="" class="fixed-menu__link"></a> </li>
     </ul>
   </nav>
-  <div class="fullscreen-menu active">
+  <!-- <div class="fullscreen-menu active">
     <a href="#" class="fullscreen-menu__close">
       <img src="../img/close.svg" alt="" class="fullscreen-menu__close-figure">
     </a>
@@ -403,6 +435,6 @@
         </li>
       </ul>
     </nav>
-  </div>
+  </div> -->
 </body>
 </html>

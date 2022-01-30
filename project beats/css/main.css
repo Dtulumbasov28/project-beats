@@ -282,13 +282,10 @@ footer {
           align-items: center;
 }
 
-.phone-number__icon-elem {
-  width: 0.6666666667rem;
-  height: 0.6666666667rem;
-  margin-right: 0.3333333333rem;
-}
-
 .phone-number__icon {
+  width: 0.7222222222rem;
+  height: 0.7222222222rem;
+  margin-right: 0.3333333333rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -331,8 +328,9 @@ footer {
   display: flex;
 }
 
-.feature__icon {
+.feature__image {
   width: 2.5rem;
+  height: 2.5rem;
   margin-right: 0.3888888889rem;
 }
 
@@ -863,7 +861,8 @@ footer {
 }
 
 .map--section {
-  background: url(../../img/map.png) no-repeat;
+  background: url(../img/map.png) no-repeat;
+  background-size: cover;
 }
 
 .footer {
@@ -920,13 +919,9 @@ footer {
   padding: 0 5px;
 }
 
-.socials__link {
+.socials__icon {
   width: 30px;
   height: 30px;
-}
-
-.socials__item--icon--vk .socials__link {
-  background: url(../../img/vk.svg);
 }
 
 .socials__item--icon--fb .socials__link {
@@ -969,6 +964,18 @@ footer {
   display: -ms-flexbox;
   display: flex;
 }
+@media screen and (max-width: 768px) {
+  .product__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .product__col {
   margin-right: 3.2777777778rem;
@@ -987,6 +994,11 @@ footer {
   margin-bottom: 1.3888888889rem;
   margin-right: 0;
 }
+@media screen and (max-width: 768px) {
+  .product__ingredients {
+    display: none;
+  }
+}
 
 .product__dropdown {
   position: absolute;
@@ -1001,6 +1013,13 @@ footer {
   width: 15.1666666667rem;
   height: 16.3333333333rem;
   background: rgba(255, 255, 255, 0.8);
+  left: 35.5rem;
+  bottom: 10.7222222222rem;
+}
+@media screen and (max-width: 768px) {
+  .product__dropdown {
+    display: none;
+  }
 }
 
 .product__dropdown-parameters {
@@ -1017,7 +1036,12 @@ footer {
   margin-right: 0;
 }
 
-.product__ingredients-gear {
+.product__dropdown-icon {
+  width: 1.6666666667rem;
+  height: 1.6666666667rem;
+}
+
+.product__ingredients-icon {
   top: 50%;
   left: 50%;
   position: absolute;
@@ -1061,4 +1085,19 @@ footer {
   color: #000;
   font-size: 36px;
   margin-right: 0.7222222222rem;
+}
+
+.products-slider__arrow--icon--prev {
+  position: absolute;
+  width: 24px;
+  height: 40px;
+  top: 50%;
+}
+
+.products-slider__arrow--icon--next {
+  position: absolute;
+  width: 24px;
+  height: 40px;
+  right: 0;
+  top: 50%;
 }
