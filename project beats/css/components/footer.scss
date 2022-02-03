@@ -13,8 +13,13 @@
 
   @include phones {
     justify-content: center;
+    flex-direction: column;
   }
 }
 .footer__phone-number {
   font-size: 18px;
+
+  @include phones {
+    justify-content: center;
+  }
 }
