@@ -1,0 +1,2 @@
+$('.products__item').bxSlider();
+
