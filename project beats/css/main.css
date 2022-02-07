@@ -1275,6 +1275,12 @@ footer {
   display: flex;
   display: none;
 }
+.modal.error-modal .modal__content {
+  color: red;
+}
+.modal .fancybox-button {
+  display: none;
+}
 
 .modal__container {
   margin: auto;
@@ -1305,4 +1311,8 @@ footer {
   .modal__content {
     font-weight: bold;
   }
+}
+
+.input-error {
+  border-color: #E01F3C;
 }
