@@ -1,8 +1,18 @@
+.products-slider {
+  position: relative;
+
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+}
 .products-slider__arrow--icon--prev {
   position: absolute;
   width: 24px;
   height: 40px;
   top: 50%;
+  z-index: 1;
 }
 .products-slider__arrow--icon--next {
   position: absolute;
@@ -10,4 +20,6 @@
   height: 40px;
   right: 0;
   top: 50%;
+  z-index: 1;
+
 }

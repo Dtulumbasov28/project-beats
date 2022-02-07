@@ -43,6 +43,9 @@
     background: rgba(255, 255, 255, 0.8);
     left: rem(639px);
     bottom: rem(193px);
+    display: none;
+    transition: .3s;
+
 
     @include tablets {
         display: none;
@@ -100,4 +103,8 @@
     color: #000;
     font-size: 36px;
     margin-right: rem(13px);
+
+    @include tablets {
+        margin-right: 0;
+    }
 }

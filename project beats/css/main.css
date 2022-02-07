@@ -294,18 +294,43 @@ footer {
   white-space: nowrap;
 }
 
-.menu--vertical {
+.fullscreen-menu {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.fullscreen-menu__close-figure {
+  position: absolute;
+  right: 1.1111111111rem;
+  top: 1.3888888889rem;
+}
+@media screen and (max-width: 768px) {
+  .fullscreen-menu__close-figure {
+    display: block;
+  }
+}
+
+.menu--vertical {
   font-size: 36px;
   color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background: #292929;
   margin: 0;
   width: 100%;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .menu--vertical {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -802,6 +827,11 @@ footer {
   top: 20%;
   right: 3%;
 }
+@media screen and (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
+}
 
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
@@ -951,27 +981,6 @@ footer {
   height: 30px;
 }
 
-.fullscreen-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-
-.fullscreen-menu__close-figure {
-  display: none;
-  position: absolute;
-  right: 2.3333333333rem;
-  top: 2.3333333333rem;
-}
-@media screen and (max-width: 768px) {
-  .fullscreen-menu__close-figure {
-    display: block;
-  }
-}
-
 .product__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1033,6 +1042,9 @@ footer {
   background: rgba(255, 255, 255, 0.8);
   left: 35.5rem;
   bottom: 10.7222222222rem;
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 @media screen and (max-width: 768px) {
   .product__dropdown {
@@ -1106,12 +1118,28 @@ footer {
   font-size: 36px;
   margin-right: 0.7222222222rem;
 }
+@media screen and (max-width: 768px) {
+  .product__price {
+    margin-right: 0;
+  }
+}
+
+.products-slider {
+  position: relative;
+}
+.products-slider .bx-wrapper {
+  border: 0;
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 
 .products-slider__arrow--icon--prev {
   position: absolute;
   width: 24px;
   height: 40px;
   top: 50%;
+  z-index: 1;
 }
 
 .products-slider__arrow--icon--next {
@@ -1120,6 +1148,7 @@ footer {
   height: 40px;
   right: 0;
   top: 50%;
+  z-index: 1;
 }
 
 .team {
@@ -1222,6 +1251,7 @@ footer {
   overflow: hidden;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
+  height: 0;
 }
 
 .team__content-title {

@@ -57,16 +57,35 @@
 .phone-number__text {
   white-space: nowrap;
 }
-.menu--vertical {
+.fullscreen-menu {
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.fullscreen-menu__close-figure {
+  position: absolute;
+  right: rem(20px);
+  top: rem(25px);
+
+  
+  @include tablets {
+    display: block;
+  }
+}
+.menu--vertical {
   font-size: 36px;
   color: #fff;
+  justify-content: center;
   text-align: center;
   background: $black;
   margin: 0;
   width: 100%;
+  height: 100%;
   
   @include tablets {
-    display: block;
+    display: flex;
   }
 }

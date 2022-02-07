@@ -1,19 +1,1 @@
-.fullscreen-menu {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.fullscreen-menu__close-figure {
-  display: none;
-  position: absolute;
-  right: rem(42px);
-  top: rem(42px);
 
-  
-  @include tablets {
-    display: block;
-  }
-}
