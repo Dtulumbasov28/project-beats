@@ -1,0 +1,48 @@
+.color-menu-section {
+  position: relative;
+  color: #fff;
+  background: black;
+}
+.color-menu-section__title {
+  color: #fff;
+  text-align: start;
+}
+.color-menu {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+}
+.color-menu__item {
+  display: flex;
+
+  &--grey {
+    background: #999;
+  }
+
+  &--black {
+    background: #151515;
+  }
+
+  &--red {
+    background: $red;
+  }
+}
+.color-menu__title {
+  position: relative;
+  width: 100px;
+  writing-mode: vertical-lr;
+  text-decoration: none;
+  font-size: 36px;
+}
+.color-menu__content {
+  background: rgba(47, 50, 52, 0.9);
+  width: 0px;
+  position: relative;
+  overflow: hidden;
+  transition: width .7s;
+}
+.color-menu__container {
+  padding: 40px 73px 45px 26px;
+}
