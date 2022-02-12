@@ -7,7 +7,7 @@ sections.first().addClass("active");
 
 const perfomeTransition = (sectionEq) => {
   if (inScroll == false) {
-    inScroll - true;
+    inScroll = true;
     const position = sectionEq * -100;
 
     display.css({
@@ -30,10 +30,10 @@ const scrollViewport = direction => {
   const prevSection = activeSection.prev();
 
 
-  if (direction == "next" && nextSection.lenght) {
+  if (direction == "next" && nextSection.length) {
     perfomeTransition(nextSection.index());
   }
-  if (direction == "prev" && prevSection.lenght) {
+  if (direction == "prev" && prevSection.length) {
     perfomeTransition(prevSection.index());
   }
 }
@@ -48,4 +48,32 @@ $(window).on("wheel", e => {
   if (deltaY < 0) {
     scrollViewport("prev");
   }
+});
+
+$(window).on("keydown", e => {
+
+  const tagName = e.target.tagName.toLowerCase();
+
+  if (tagName != "input" && tagName != "textarea") {
+    switch (e.keyCode) {
+      case 38: //prev
+      scrollViewport("prev");
+      break;
+  
+  
+      case 40: //next
+      scrollViewport("next");
+      break;
+    }
+  }
+});
+
+$("[data-scroll-to]").click (e => {
+  e.preventDefault();
+
+  const $this = $(e.currentTarget);
+  const target = $this.attr("data-scroll-to");
+  const reqSection = $(`[data-section-id=${target}]`);
+
+perfomeTransition(reqSection.index());
 });
