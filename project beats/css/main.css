@@ -1362,14 +1362,21 @@ footer {
   background: #E01F3C;
 }
 
-.color-menu__title {
-  position: relative;
+.color-menu__link {
   width: 100px;
+}
+
+.color-menu__title {
+  position: absolute;
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
   text-decoration: none;
   font-size: 36px;
+  top: 60%;
+  margin-left: 10%;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .color-menu__content {
