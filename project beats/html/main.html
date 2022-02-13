@@ -11,7 +11,7 @@
 <body>
   <div class="wrapper">
     <div class="maincontent">
-      <section data-section-id="hero" class="hero">
+      <section data-sidemenu-theme="black" data-section-id="hero" class="hero">
         <div class="container hero__container">
           <header class="header">
             <img src="../img/logo.svg" alt="beats logo" class="logo">
@@ -87,7 +87,7 @@
           </div>
         </div>
       </section>
-      <section data-section-id="benefits" class="section">
+      <section data-sidemenu-theme="black" data-section-id="benefits" class="section">
         <div class="container">
           <div class="headline">
             <h2 class="section__title headline__title">Почему beats solo 3? </h2>
@@ -148,7 +148,7 @@
           </ul>
         </div>
       </section>
-      <section data-section-id="products" class="section products-section">
+      <section data-sidemenu-theme="black" data-section-id="products" class="section products-section">
         <div class="container">
           <div class="products-slider">
             <div class="products-slider__arrows">
@@ -300,7 +300,7 @@
           </div>
         </div>
       </section>
-      <section data-section-id="team" class="section team-section">
+      <section data-sidemenu-theme="black" data-section-id="team" class="section team-section">
         <div class="container">
           <h1 class="section__title">Команда</h1>
           <ul class="team team--version--desktop">
@@ -405,7 +405,7 @@
           </ul>
         </div>
       </section>
-      <section data-section-id="color-menu" class="section color-menu-section">
+      <section data-sidemenu-theme="grey" data-section-id="color-menu" class="section color-menu-section">
         <h1 class="section__title color-menu-section__title">Цвета</h1>
         <ul class="color-menu">
           <li class="color-menu__item color-menu__item--grey">
@@ -455,7 +455,7 @@
           </li>
         </ul>
       </section>
-      <section data-section-id="reviews" class="section">
+      <section data-sidemenu-theme="black" data-section-id="reviews" class="section">
         <div class="container">
           <h2 class="section__title">Отзывы</h2>
           <div class="reviews">
@@ -522,13 +522,13 @@
           </div>
          </div>
       </section>
-      <section data-section-id="player" class="section player-section">
+      <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
         <div class="container">
           <h2 class="section__title">Как мы работаем</h2>
           <div class="player-section__container">
             <div class="player active">
               <div class="player__wrapper">
-                <div class="player__elem"></div>
+                <div id="yt-player" class="player__elem"></div>
                 <div class="player__splash"></div>
               </div>
               <div class="player__controls">
@@ -537,15 +537,15 @@
                   <button class="player__playback-button"></button>
                 </div>
                 <div class="player__duration">
-                  <span class="player__duration-completed"></span>
-                  <span class="player__duration-estimate"></span>
+                  <span class="player__duration-completed">0:00</span>
+                  <span class="player__duration-estimate">0:00</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section data-section-id="order" class="section order-section section--font-color--white">
+      <section data-sidemenu-theme="grey" data-section-id="order" class="section order-section section--font-color--white">
         <div class="container">
           <h2 class="section__title ">Закажите доставку</h2>
           <form class="form">
@@ -630,7 +630,7 @@
           </modal__button-container>
         </div>
       </div>
-      <section data-section-id="map" class="section map--section">
+      <section data-sidemenu-theme="black" data-section-id="map" class="section map--section">
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts">
@@ -677,7 +677,7 @@
       </section>
     </div>
   </div>
-  <nav class="fixed-menu">
+  <nav class="fixed-menu fixed-menu--shadowed">
     <ul class="fixed-menu__list">
       <li class="fixed-menu__item fixed-menu__item--active"> <a href="#" data-scroll-to="hero" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="#" data-scroll-to="benefits" class="fixed-menu__link"></a> </li>
@@ -729,5 +729,6 @@
   <script src="../js/dropdown.js"></script>
   <script src="../js/hamburger.js"></script>
   <script src="../js/ops.js"></script>
+  <script src="../js/menu-acco.js"></script>
 </body>
 </html>
