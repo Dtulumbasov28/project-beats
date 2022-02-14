@@ -1,7 +1,7 @@
 const mesureWidth = item => {
     const screenWidth = $(window).width();
     const container = item.closest(".color-menu");
-    const titlesBlocks = container.find(".color-menu__title");
+    const titlesBlocks = container.find(".color-menu__link");
     const titlesWidth = titlesBlocks.width() * titlesBlocks.length;
     
     const isMobile = window.matchMedia("(max-width: 768px").matches;

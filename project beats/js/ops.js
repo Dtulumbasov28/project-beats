@@ -34,9 +34,9 @@ const perfomeTransition = (sectionEq) => {
       sideMenu
       .find(".fixed-menu__item")
       .eq(sectionEq)
-      .addClass("active")
+      .addClass("fixed-menu__item--active")
       .siblings()
-      .removeClass("active");
+      .removeClass("fixed-menu__item--active");
 
    }, 1300);
   }
