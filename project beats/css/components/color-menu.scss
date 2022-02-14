@@ -6,6 +6,8 @@
 .color-menu-section__title {
   color: #fff;
   text-align: start;
+  padding: 80px;
+  margin-bottom: 460px;
 }
 .color-menu {
   position: absolute;
@@ -39,8 +41,12 @@
   text-decoration: none;
   font-size: 36px;
   bottom: 5%;
-  margin-left: 10%;
+  margin-left: 20px;
   transform: rotate(180deg);
+}
+.color-menu__close {
+  margin-left: 93%;
+  position: relative;
 }
 .color-menu__content {
   background: rgba(47, 50, 52, 0.9);
@@ -50,5 +56,5 @@
   transition: width .7s;
 }
 .color-menu__container {
-  padding: 40px 73px 45px 26px;
+  padding: 40px 17px 45px 26px;
 }

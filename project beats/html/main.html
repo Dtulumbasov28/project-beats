@@ -413,9 +413,9 @@
               <span class="color-menu__title">«Атласное серебро»</span>
             </a>
             <div class="color-menu__content">
-              <div class="color-menu__conteiner">
-                <button class="color-menu__close-figure" type="button" id="close">
-                  <img src="../img/close.svg" alt="" class="fullscreen-menu__close-figure">
+              <div class="color-menu__container">
+                <button class="color-menu__close" type="button" id="close">
+                  <img src="../img/close.svg" alt="" class="color-menu__close-figure">
                 </button>
                 <div class="color-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
                   Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
@@ -428,9 +428,9 @@
               <span class="color-menu__title">«Чёрный матовый»</span>
             </a>
             <div class="color-menu__content">
-              <div class="color-menu__conteiner">
-                <button class="color-menu__close-figure" type="button">
-                  <img src="../img/close.svg" alt="" class="fullscreen-menu__close-figure">
+              <div class="color-menu__container">
+                <button class="color-menu__close" type="button">
+                  <img src="../img/close.svg" alt="" class="color-menu__close-figure">
                 </button>
                 <div class="color-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
                   Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
@@ -443,9 +443,9 @@
               <span class="color-menu__title">«Красный цитрус»</span>
             </a>
             <div class="color-menu__content">
-              <div class="color-menu__conteiner">
+              <div class="color-menu__container">
                 <button class="color-menu__close" type="button">
-                  <img src="../img/close.svg" alt="" class="fullscreen-menu__close-figure">
+                  <img src="../img/close.svg" alt="" class="color-menu__close-figure">
                 </button>
                 <div class="color-menu__content-text">Наушники Beats Solo3 могут работать до 40 часов без подзарядки, чтобы вы могли пользоваться ими каждый день. 5‑минутной зарядки Fast Fuel хватит ещё на 3 часа воспроизведения. Фирменное звучание Beats в наушниках с технологией Bluetooth класса 1 будет сопровождать вас повсюду — куда бы вы ни отправились. 
                   Расположение чашек с мягкими амбушюрами можно регулировать — вы сможете носить их целый день.
@@ -631,6 +631,7 @@
         </div>
       </div>
       <section data-sidemenu-theme="black" data-section-id="map" class="section map--section">
+        <div class="map" id="map"></div>
         <footer class="footer">
           <div class="container footer__container">
             <address class="contacts">
@@ -685,13 +686,14 @@
       <li class="fixed-menu__item"> <a href="#" data-scroll-to="team" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="#" data-scroll-to="color-menu" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="#" data-scroll-to="reviews" class="fixed-menu__link"></a> </li>
+      <li class="fixed-menu__item"> <a href="#" data-scroll-to="player" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="#" data-scroll-to="order" class="fixed-menu__link"></a> </li>
       <li class="fixed-menu__item"> <a href="#" data-scroll-to="map" class="fixed-menu__link"></a> </li>
     </ul>
   </nav>
   <div class="fullscreen-menu">
     <a href="#" class="fullscreen-menu__close" id="close">
-      <img src="../img/close.svg" alt="" class="fullscreen-menu__close-figure">
+      <img src="../img/close.svg" alt="" class="close-figure fullscreen-menu__close-figure">
     </a>
     <nav class="menu menu--vertical">
       <ul class="menu__list">
@@ -730,5 +732,7 @@
   <script src="../js/hamburger.js"></script>
   <script src="../js/ops.js"></script>
   <script src="../js/menu-acco.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+  <script src="../js/map.js"></script>
 </body>
 </html>

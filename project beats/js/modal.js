@@ -43,13 +43,14 @@ $('.form').submit(e=> {
         request.done((data) => {
             content.text(data.message);
         });
+        
         request.fail((data) => {
             const message = data.responseJSON.message;
             content.text(message);
             modal.addClass("error-modal");
     });
 
-    request.allways(()=> {
+    request.always(()=> {
         $.fancybox.open({
             src: "#modal",
            type: "inline"

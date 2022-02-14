@@ -93,6 +93,14 @@ footer {
   width: 100%;
 }
 
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
 .hero {
   background-color: #F5F5F5;
   height: 100vh;
@@ -841,6 +849,9 @@ footer {
     display: none;
   }
 }
+.fixed-menu--shadowed.fixed-menu__link {
+  background: white;
+}
 
 .fixed-menu__item {
   margin-bottom: 0.2777777778rem;
@@ -899,9 +910,15 @@ footer {
   border-radius: 10px;
 }
 
-.map--section {
+.map {
   background: url(../img/map.png) no-repeat;
   background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.map--section {
+  position: relative;
 }
 
 .footer {
@@ -1335,6 +1352,8 @@ footer {
 .color-menu-section__title {
   color: #fff;
   text-align: start;
+  padding: 80px;
+  margin-bottom: 460px;
 }
 
 .color-menu {
@@ -1374,9 +1393,14 @@ footer {
   text-decoration: none;
   font-size: 36px;
   bottom: 5%;
-  margin-left: 10%;
+  margin-left: 20px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.color-menu__close {
+  margin-left: 93%;
+  position: relative;
 }
 
 .color-menu__content {
@@ -1389,7 +1413,7 @@ footer {
 }
 
 .color-menu__container {
-  padding: 40px 73px 45px 26px;
+  padding: 40px 17px 45px 26px;
 }
 
 .player {

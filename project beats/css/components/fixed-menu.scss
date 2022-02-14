@@ -6,6 +6,10 @@
     @include tablets {
         display: none;
     }
+
+    &--shadowed.fixed-menu__link {
+        background: white;
+    }
 }
 .fixed-menu__item {
     margin-bottom: rem(5px);
