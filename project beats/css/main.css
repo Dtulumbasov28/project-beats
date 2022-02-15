@@ -1447,10 +1447,18 @@ button {
   background: #fff;
 }
 .player.paused .player__start:after {
-  right: 0;
+  right: 600px;
+  top: 11px;
+  background: url(../../img/slider.svg);
+  width: 13px;
+  height: 13px;
 }
 .player.paused .player__start:before {
-  left: 0;
+  background: url(../../img/scale.svg);
+  width: 444px;
+  height: 4px;
+  left: 51px;
+  top: 15px;
 }
 
 .player__splash {
