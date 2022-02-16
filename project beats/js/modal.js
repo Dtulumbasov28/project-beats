@@ -53,7 +53,7 @@ $('.form').submit(e=> {
     request.always(()=> {
         $.fancybox.open({
             src: "#modal",
-           type: "inline"
+           type: "inline",
     });
     })
  }

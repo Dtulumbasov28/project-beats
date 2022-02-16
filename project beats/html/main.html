@@ -524,9 +524,9 @@
       </section>
       <section data-sidemenu-theme="black" data-section-id="player" class="section player-section">
         <div class="container">
-          <h2 class="section__title">Как мы работаем</h2>
+          <h2 class="section__title player-section__title">Как мы работаем</h2>
           <div class="player-section__container">
-            <div class="player active">
+            <div class="player paused">
               <div class="player__wrapper">
                 <div id="yt-player" class="player__elem"></div>
                 <div class="player__splash"></div>
@@ -549,7 +549,7 @@
         <div class="container">
           <h2 class="section__title ">Закажите доставку</h2>
           <form class="form">
-            <input type="hidden" name="to" value="@89612021865@mail.ru">
+            <input type="hidden" name="to" value="89612021865@mail.ru">
             <div class="form__cool">
               <div class="form__row">
                 <label class="form__block">
@@ -694,7 +694,7 @@
   </nav>
   <div class="fullscreen-menu">
     <a href="#" class="fullscreen-menu__close" id="close">
-      <img src="../img/close.svg" alt="" class="close-figure fullscreen-menu__close-figure">
+      <img src="../img/close.svg" alt="close" class="close-figure fullscreen-menu__close-figure">
     </a>
     <nav class="menu menu--vertical">
       <ul class="menu__list">
@@ -731,6 +731,8 @@
   <script src="../js/modal.js"></script>
   <script src="../js/dropdown.js"></script>
   <script src="../js/hamburger.js"></script>
+  <script type="text/javascript" src="js/jquery.touchSwipe.min.js"></script>
+  <script src="mobile-detect.js"></script>
   <script src="../js/ops.js"></script>
   <script src="../js/menu-acco.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>
