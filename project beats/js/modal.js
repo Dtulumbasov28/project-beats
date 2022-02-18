@@ -20,7 +20,7 @@ $('.form').submit(e=> {
     const to = form.find("[name='to']");
 
     const modal = $("#modal");
-    const content = modal.find(".modal.content");
+    const content = modal.find(".modal__content");
 
     modal.removeClass("error-modal");
 

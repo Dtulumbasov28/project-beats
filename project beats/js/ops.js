@@ -3,14 +3,14 @@ const display = $(".maincontent");
 const sideMenu = $(".fixed-menu");
 const menuItems = sideMenu.find(".fixed-menu__item");
 
-const mobileDetect = new MobileDetect(window.navigator.userAgent);
+const mobileDetect = new mobileDetect(window.navigator.userAgent);
 const isMobile = mobileDetect.mobile();
 
 let inScroll = false;
 
 sections.first().addClass("active");
 
-const countSectionPosition = sectionEq => {
+const countSectionPosition = (sectionEq) => {
   const position = sectionEq * -100;
 
   if (isNaN(position)) {
@@ -136,12 +136,15 @@ if (isMobile) {
   $("body").swipe({
     swipe: function(event, direction,) {
        const scroller = viewportScroller();
-       let scrollDirection = "";
- 
-       if (direction == "up") scrollDirection = "next";
-       if (direction == "down") scrollDirection = "prev";
- 
-       scroller[scrollDirection]();
+
+       if (direction == "up"){
+        scroller.next()
+       }
+       if (direction == "down"){
+        scroller.prev()
+       };
+
+      //  scroller[scrollDirection]();
     },
   });
 }
